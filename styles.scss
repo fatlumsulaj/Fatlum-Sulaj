@@ -8,6 +8,8 @@
 }
 
 $smallScreens: 550px;
+$mediumScreens: 800px;
+
 
 @mixin padding-template {
     padding-left: 16px;
@@ -186,6 +188,8 @@ nav {
     font-weight: 700;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .aboutMe-content {
@@ -206,4 +210,23 @@ nav {
 .aboutMe-active-btn {
     color: #6E07F3;
     background-color: white;
+}
+
+@media (max-width: $mediumScreens) {
+    .aboutMe-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutMe-categories {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .aboutMe {
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
