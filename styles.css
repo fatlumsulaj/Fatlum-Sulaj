@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -156,7 +157,7 @@ nav div .sayHello {
 }
 
 .aboutMe-button {
-  width: 230px;
+  width: 180px;
   height: 48px;
   font-size: 16px;
   color: white;
@@ -167,8 +168,8 @@ nav div .sayHello {
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .aboutMe-content {
@@ -185,6 +186,7 @@ nav div .sayHello {
 
 .aboutMe-active-p {
   display: block !important;
+  padding-bottom: 20px;
 }
 
 .aboutMe-active-btn {
@@ -208,6 +210,11 @@ nav div .sayHello {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .aboutMe-button {
+    width: 110px;
+    font-size: 14px;
+    height: 40px;
+  }
 }
 .myServices {
   max-width: 1200px;
@@ -216,6 +223,11 @@ nav div .sayHello {
   justify-content: center;
   background-size: cover;
   background-position: center;
+}
+
+.myServices-wrapper {
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .service-template {
@@ -254,4 +266,6 @@ nav div .sayHello {
 }
 .purple-text {
   color: #6E07F3;
+  margin-top: 45px;
+  font-weight: 600;
 }/*# sourceMappingURL=styles.css.map */
