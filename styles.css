@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500;600;700;800&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -121,7 +121,8 @@ nav div .sayHello {
   nav p {
     font-size: 40px;
   }
-  nav .mentorship, nav .sayHello {
+  nav .mentorship,
+nav .sayHello {
     font-size: 17px;
   }
 }
@@ -217,7 +218,7 @@ nav div .sayHello {
   }
 }
 .myServices {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -251,12 +252,12 @@ nav div .sayHello {
 }
 
 .myServices-wrapper {
-  margin-top: -40px;
+  margin-top: -60px;
   display: flex;
-  max-width: 1200px;
+  max-width: 1300px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 1300px) {
@@ -268,4 +269,116 @@ nav div .sayHello {
   color: #6E07F3;
   margin-top: 45px;
   font-weight: 600;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.projects-center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 140px;
+  padding-bottom: 100px;
+}
+
+.all-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 30px;
+}
+
+.projects-intro {
+  margin-bottom: 70px;
+  padding: 1px 10px;
+}
+.projects-intro h2 {
+  font-size: 33px;
+  color: black;
+  margin-bottom: 15px;
+}
+.projects-intro p {
+  font-size: 18px;
+}
+
+.project-template {
+  max-width: 400px;
+  height: 300px;
+  margin: auto;
+  margin: 14px;
+  border-radius: 13px;
+  border: 1px solid rgba(216, 206, 206, 0.5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.project-template i {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.project-template button {
+  padding: 8px 17px;
+  border-radius: 9999px;
+  border: 1px solid #6E07F3;
+  color: #6E07F3;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: white;
+}
+.project-template button:hover {
+  cursor: pointer;
+  background-color: #6E07F3;
+  color: white;
+  transition: 0.2s ease-in;
+}
+.project-template h2 {
+  color: rgb(71, 60, 60);
+}
+
+.project-template-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.miniProject-template {
+  max-width: 400px;
+  height: 96px;
+  margin: auto;
+  margin: 10px;
+  border-radius: 13px;
+  border: 1px solid rgba(216, 206, 206, 0.5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 2px 20px;
+  cursor: pointer;
+}
+.miniProject-template i {
+  margin-right: 10px;
+  color: #6E07F3;
+  font-size: 19px;
+}
+
+.project-flex {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.project-flex p {
+  font-size: 25px;
+  color: black;
+  font-weight: 600;
+}
+
+.red-color {
+  color: red;
+}
+
+.green-color {
+  color: green;
+}
+/*# sourceMappingURL=styles.css.map */
