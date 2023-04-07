@@ -113,8 +113,10 @@ nav {
 
 }
 
+
 .myAvatar {
-    max-width: 200px;
+    max-width: 27
+    0px;
 }
 
 @media (max-width: $smallScreens) {
@@ -446,7 +448,7 @@ nav {
     padding: 2px 20px;
     cursor: pointer;
     color: #6E07F3;
-    font-weight: 600;
+    font-weight: 500;
 
     i {
         margin-right: 10px;
@@ -490,4 +492,93 @@ nav {
         }
     
     }
+    .miniProject-template {
+        max-width: 500px;
+        height: 60px;
+        margin: 5px;
+        padding: 2px 20px;
+    }
+}
+
+//Blog
+.blog {
+    background-color: #141c3a;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    p {
+        color: rgb(214, 213, 213);
+    }
+}
+
+.blog-intro1, .blog-intro2 {
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.blog-intro1 {
+    color: white;
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+
+.blog-intro2 {
+    font-size: 19px;
+}
+
+.blog-wrapper {
+    padding-top: 50px;
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.blog-template {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 450px;
+    height: 210px;
+    padding: 25px;
+    padding-left: 25px;
+    margin: 20px;
+    border-left: 3px solid #5be9b9;
+    border-radius: 8px;
+    background-color: #162041;
+    box-shadow: 4px 8px rgba(31, 31, 31, 0.2);
+    cursor: pointer;
+    h2 {
+        color: white;
+    }
+    h4 {
+        color: #5be9b9;
+    }
+}
+
+.blogTitle {
+    font-size: 20px;
+}
+
+.category-number {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+        font-size: 15px;
+        color: #162041;
+        background-color: #5be9b9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 9999px;
+        padding: 12px;
+        width: 20px;
+        height: 20px;
+    }
+}
+.blogDate-readTime {
+    display: flex;
+    justify-content: space-between;
 }
