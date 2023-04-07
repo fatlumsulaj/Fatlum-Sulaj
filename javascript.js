@@ -1,5 +1,3 @@
-// test
-
 const aboutMe = document.getElementById("aboutMe");
 const skills = document.getElementById("skills");
 const goals = document.getElementById("goals");

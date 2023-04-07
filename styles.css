@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 html {
@@ -126,26 +125,34 @@ nav .sayHello {
     font-size: 17px;
   }
 }
+.fatlumsulaj {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 30px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .aboutMe {
   width: 100%;
-  height: 430px;
-  padding-top: 100px;
-  padding-bottom: 110px;
-  background-color: #6E07F3;
+  height: auto;
+  padding-bottom: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #6E07F3;
 }
 
-.aboutMe-wrapper {
+.aboutMe-flex {
   display: flex;
-}
-
-.aboutMe {
-  display: flex;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  max-width: 950px;
+  padding: 10px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutMe-categories {
@@ -154,7 +161,7 @@ nav .sayHello {
   align-items: center;
   justify-content: center;
   padding-left: 10px;
-  padding-right: 50px;
+  padding-right: 10px;
 }
 
 .aboutMe-button {
@@ -167,27 +174,18 @@ nav .sayHello {
   border-radius: 9999px;
   border: 1px solid white;
   font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 6px;
-  margin-right: 6px;
+  margin: 5px 1px;
 }
 
-.aboutMe-content {
-  max-width: 750px;
-  color: white;
-  font-size: 17px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-.aboutMe-content p {
+#aboutMeP, #skillsP, #goalsP {
   display: none;
-  text-align: center;
 }
 
 .aboutMe-active-p {
   display: block !important;
   padding-bottom: 20px;
+  color: white;
+  margin: auto;
 }
 
 .aboutMe-active-btn {
@@ -196,25 +194,41 @@ nav .sayHello {
 }
 
 @media (max-width: 800px) {
-  .aboutMe-wrapper {
+  .aboutMe-flex {
     display: flex;
     flex-direction: column;
   }
-  .aboutMe-categories {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
-    margin-bottom: 20px;
-  }
-  .aboutMe {
-    height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+  .aboutMe-active-p {
+    text-align: center;
+    margin: auto;
   }
   .aboutMe-button {
-    width: 110px;
+    width: 100px;
     font-size: 14px;
-    height: 40px;
+    height: 35px;
+  }
+  .buttons-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 550px) {
+  .fatlumsulaj {
+    font-size: 24px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .aboutMe {
+    padding-bottom: 170px;
+  }
+  .aboutMe-flex {
+    display: flex;
+    max-width: 950px;
+    padding: 10px;
+    gap: 20px;
   }
 }
 .myServices {
@@ -235,29 +249,35 @@ nav .sayHello {
   text-align: center;
   border: 1px solid rgba(216, 206, 206, 0.5);
   background-color: white;
-  padding: 45px 15px;
+  padding: 88px 35px;
 }
 .service-template i {
-  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
   background-color: #5be9b9;
   padding: 18px;
   border-radius: 9999px;
 }
 .service-template p {
-  max-width: 500px;
+  max-width: 450px;
 }
 .service-template h2 {
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .myServices-wrapper {
-  margin-top: -60px;
+  margin-top: -150px;
   display: flex;
   max-width: 1300px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px rgba(185, 185, 185, 0.2);
 }
 
 @media (max-width: 1300px) {
@@ -271,6 +291,14 @@ nav .sayHello {
   font-weight: 600;
 }
 
+@media (max-width: 550px) {
+  .service-template {
+    text-align: center;
+    border: 1px solid rgba(216, 206, 206, 0.5);
+    background-color: white;
+    padding: 40px 5px;
+  }
+}
 .projects-center {
   text-align: center;
   display: flex;
@@ -280,13 +308,19 @@ nav .sayHello {
   padding-bottom: 100px;
 }
 
+.main-projects {
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
 .all-projects {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
-  gap: 30px;
+  gap: 5px;
 }
 
 .projects-intro {
@@ -299,7 +333,14 @@ nav .sayHello {
   margin-bottom: 15px;
 }
 .projects-intro p {
-  font-size: 18px;
+  font-size: 19px;
+  max-width: 1100px;
+  margin: auto;
+}
+.projects-intro a {
+  text-decoration: none;
+  color: #6E07F3;
+  font-weight: 600;
 }
 
 .project-template {
@@ -309,7 +350,7 @@ nav .sayHello {
   margin: 14px;
   border-radius: 13px;
   border: 1px solid rgba(216, 206, 206, 0.5);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px rgba(185, 185, 185, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -342,6 +383,8 @@ nav .sayHello {
 .project-template-flex {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
 }
 
 .miniProject-template {
@@ -351,11 +394,13 @@ nav .sayHello {
   margin: 10px;
   border-radius: 13px;
   border: 1px solid rgba(216, 206, 206, 0.5);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px rgba(185, 185, 185, 0.2);
   display: flex;
   align-items: center;
   padding: 2px 20px;
   cursor: pointer;
+  color: #6E07F3;
+  font-weight: 600;
 }
 .miniProject-template i {
   margin-right: 10px;
@@ -369,7 +414,7 @@ nav .sayHello {
   gap: 10px;
 }
 .project-flex p {
-  font-size: 25px;
+  font-size: 23px;
   color: black;
   font-weight: 600;
 }
@@ -380,5 +425,21 @@ nav .sayHello {
 
 .green-color {
   color: green;
+}
+
+@media (max-width: 550px) {
+  .projects-center {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+  .projects-intro {
+    margin-bottom: 20px;
+    padding: 1px 10px;
+  }
+  .projects-intro h2 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 15px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
