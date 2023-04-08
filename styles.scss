@@ -61,6 +61,11 @@ nav {
     }
 }
 
+.logo {
+    text-decoration: none;
+    color: #6E07F3;
+}
+
 .mentorship:hover {
     color: #6E07F3;
     transition: .2s ease-in;
@@ -115,8 +120,7 @@ nav {
 
 
 .myAvatar {
-    max-width: 27
-    0px;
+    max-width: 27 0px;
 }
 
 @media (max-width: $smallScreens) {
@@ -125,7 +129,7 @@ nav {
     }
 
     .myAvatar {
-        max-width: 140px;
+        max-width: 160px;
     }
 
     .hero-img {
@@ -166,24 +170,24 @@ nav {
     padding-right: 10px;
 }
 
- .aboutMe {
-     width: 100%;
-     height: auto;
-     padding-bottom: 220px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background-color: #6E07F3;
- }
+.aboutMe {
+    width: 100%;
+    height: auto;
+    padding-bottom: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6E07F3;
+}
 
- .aboutMe-flex {
+.aboutMe-flex {
     display: flex;
     max-width: 950px;
     padding: 10px;
     gap: 50px;
     justify-content: center;
     align-items: center;
- }
+}
 
 .aboutMe-categories {
     display: flex;
@@ -206,7 +210,10 @@ nav {
     font-weight: 700;
     margin: 5px 1px;
 }
-#aboutMeP, #skillsP, #goalsP {
+
+#aboutMeP,
+#skillsP,
+#goalsP {
     display: none;
 }
 
@@ -228,15 +235,17 @@ nav {
         flex-direction: column;
     }
 
-.aboutMe-active-p {
-    text-align: center;
-    margin: auto;
-}
+    .aboutMe-active-p {
+        text-align: center;
+        margin: auto;
+    }
+
     .aboutMe-button {
         width: 100px;
         font-size: 14px;
         height: 35px;
     }
+
     .buttons-content {
         display: flex;
         flex-wrap: wrap;
@@ -245,21 +254,23 @@ nav {
         align-items: center;
     }
 }
+
 @media (max-width: $smallScreens) {
     .fatlumsulaj {
         font-size: 24px;
         padding-top: 60px;
         padding-bottom: 30px;
     }
+
     .aboutMe {
         padding-bottom: 170px;
     }
-   
+
     .aboutMe-flex {
-       display: flex;
-       max-width: 950px;
-       padding: 10px;
-       gap: 20px;
+        display: flex;
+        max-width: 950px;
+        padding: 10px;
+        gap: 20px;
     }
 
 }
@@ -482,16 +493,19 @@ nav {
         padding-top: 70px;
         padding-bottom: 50px;
     }
+
     .projects-intro {
         margin-bottom: 20px;
         padding: 1px 10px;
+
         h2 {
             font-size: 28px;
             color: black;
             margin-bottom: 15px;
         }
-    
+
     }
+
     .miniProject-template {
         max-width: 500px;
         height: 60px;
@@ -505,12 +519,14 @@ nav {
     background-color: #141c3a;
     padding-top: 100px;
     padding-bottom: 200px;
+
     p {
         color: rgb(214, 213, 213);
     }
 }
 
-.blog-intro1, .blog-intro2 {
+.blog-intro1,
+.blog-intro2 {
     align-items: center;
     text-align: center;
     max-width: 1200px;
@@ -536,6 +552,7 @@ nav {
     align-items: center;
     margin: auto;
 }
+
 .blog-template {
     display: flex;
     flex-direction: column;
@@ -550,9 +567,11 @@ nav {
     background-color: #162041;
     box-shadow: 4px 8px rgba(31, 31, 31, 0.2);
     cursor: pointer;
+
     h2 {
         color: white;
     }
+
     h4 {
         color: #5be9b9;
     }
@@ -565,6 +584,7 @@ nav {
 .category-number {
     display: flex;
     justify-content: space-between;
+
     h3 {
         font-size: 15px;
         color: #162041;
@@ -578,7 +598,158 @@ nav {
         height: 20px;
     }
 }
+
 .blogDate-readTime {
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: $smallScreens) {
+    .blog {
+        background-color: #141c3a;
+        padding-top: 50px;
+        padding-bottom: 120px;
+    }
+}
+
+
+//start a project
+.startProject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.startProject-wrapper {
+    border: 1px solid white;
+    height: auto;
+    margin-top: -80px;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 1200px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h2 {
+        font-size: 30px;
+        color: #141c3a;
+    }
+
+    p {
+        font-size: 17px;
+        max-width: 450px;
+        color: #141c3a;
+        font-weight: 600;
+    }
+
+    button {
+        width: auto;
+        height: 45px;
+        padding: 8px 23px;
+        border-radius: 9999px;
+        border: 1px solid #6E07F3;
+        color: #6E07F3;
+        font-size: 19px;
+        font-weight: 600;
+        background-color: white;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #6E07F3;
+        color: white;
+        transition: .2s ease-in;
+    }
+}
+
+@media(max-width: $mediumScreens) {
+    .startProject-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.footer {
+    margin-top: -80px;
+    padding-top: 180px;
+    padding-bottom: 50px;
+    background-color: #6E07F3;
+    color: rgb(236, 234, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-wrapper {
+    a {
+        text-decoration: none;
+        color: white !important;
+        font-size: 60px;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        font-size: 21px;
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 9999px;
+        cursor: pointer;
+    }
+
+    .social:hover {
+        background-color: white;
+        color: #6E07F3;
+    }
+}
+
+.socialMedias{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.quote {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    max-width: 440px;
+}
+
+.sulajfatlum {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.copyright {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (max-width: $smallScreens) {
+    
+.footer {
+    margin-top: -80px;
+    padding-top: 130px;
+    padding-bottom: 20px;
+}
 }
