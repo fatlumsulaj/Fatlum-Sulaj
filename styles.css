@@ -126,11 +126,11 @@ nav div .sayHello {
     font-size: 40px;
   }
   nav .mentorship,
-nav .sayHello {
+  nav .sayHello {
     font-size: 17px;
   }
 }
-.fatlumsulaj {
+#fatlumsulaj {
   font-size: 30px;
   font-weight: 700;
   text-align: center;
@@ -223,10 +223,10 @@ nav .sayHello {
   }
 }
 @media (max-width: 550px) {
-  .fatlumsulaj {
-    font-size: 24px;
-    padding-top: 60px;
-    padding-bottom: 30px;
+  #fatlumsulaj {
+    font-size: 19px !important;
+    padding-top: 50px;
+    padding-bottom: 10px;
   }
   .aboutMe {
     padding-bottom: 170px;
@@ -394,6 +394,10 @@ nav .sayHello {
   justify-content: center;
 }
 
+.other-projects a {
+  text-decoration: none;
+}
+
 .miniProject-template {
   max-width: 400px;
   height: 96px;
@@ -449,10 +453,14 @@ nav .sayHello {
     margin-bottom: 15px;
   }
   .miniProject-template {
-    max-width: 500px;
-    height: 60px;
+    height: 80px;
     margin: 5px;
-    padding: 2px 20px;
+    padding: 2px 50px;
+  }
+  .miniProject-template i {
+    margin-right: 20px;
+    color: #6E07F3;
+    font-size: 19px;
   }
 }
 .blog {
@@ -545,6 +553,15 @@ nav .sayHello {
     background-color: #141c3a;
     padding-top: 50px;
     padding-bottom: 120px;
+  }
+  .blogTitle {
+    font-size: 18px;
+  }
+  .category-number h4 {
+    font-size: 16px;
+  }
+  .blogDate {
+    font-size: 13px;
   }
 }
 .startProject {
@@ -658,16 +675,15 @@ nav .sayHello {
 }
 
 .sulajfatlum {
-  margin-bottom: 30px;
   font-size: 20px;
 }
 
 .copyright {
   display: flex;
-  margin: auto;
+  height: 50px;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
 }
 
 @media (max-width: 550px) {
@@ -676,5 +692,4 @@ nav .sayHello {
     padding-top: 130px;
     padding-bottom: 20px;
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

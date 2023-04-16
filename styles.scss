@@ -159,7 +159,7 @@ nav {
     }
 }
 
-.fatlumsulaj {
+#fatlumsulaj {
     font-size: 30px;
     font-weight: 700;
     text-align: center;
@@ -253,13 +253,14 @@ nav {
         justify-content: center;
         align-items: center;
     }
+
 }
 
 @media (max-width: $smallScreens) {
-    .fatlumsulaj {
-        font-size: 24px;
-        padding-top: 60px;
-        padding-bottom: 30px;
+    #fatlumsulaj {
+        font-size: 19px !important;
+        padding-top: 50px;
+        padding-bottom: 10px;
     }
 
     .aboutMe {
@@ -446,6 +447,12 @@ nav {
     justify-content: center;
 }
 
+.other-projects {
+    a {
+        text-decoration: none;
+    }
+}
+
 .miniProject-template {
     max-width: 400px;
     height: 96px;
@@ -507,10 +514,15 @@ nav {
     }
 
     .miniProject-template {
-        max-width: 500px;
-        height: 60px;
+        height: 80px;
         margin: 5px;
-        padding: 2px 20px;
+        padding: 2px 50px;
+
+        i {
+            margin-right: 20px;
+            color: #6E07F3;
+            font-size: 19px;
+        }
     }
 }
 
@@ -610,6 +622,20 @@ nav {
         padding-top: 50px;
         padding-bottom: 120px;
     }
+
+    .blogTitle {
+        font-size: 18px;
+    }
+
+    .category-number {
+        h4 {
+            font-size: 16px;
+        }
+    }
+
+    .blogDate {
+        font-size: 13px;
+    }
 }
 
 
@@ -697,6 +723,7 @@ nav {
         color: white !important;
         font-size: 60px;
     }
+
     .social {
         display: flex;
         flex-direction: row;
@@ -717,7 +744,7 @@ nav {
     }
 }
 
-.socialMedias{
+.socialMedias {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -733,23 +760,22 @@ nav {
 }
 
 .sulajfatlum {
-    margin-bottom: 30px;
     font-size: 20px;
 }
 
 .copyright {
     display: flex;
-    margin: auto;
+    height: 50px;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
 }
 
 @media (max-width: $smallScreens) {
-    
-.footer {
-    margin-top: -80px;
-    padding-top: 130px;
-    padding-bottom: 20px;
-}
+
+    .footer {
+        margin-top: -80px;
+        padding-top: 130px;
+        padding-bottom: 20px;
+    }
 }

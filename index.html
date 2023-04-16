@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/9621d44fed.js" crossorigin="anonymous"></script>
-  <meta name="description" content="My web development portfolio showcases my skills and experience in HTML, CSS, JavaScript, and more.">
-	<meta name="keywords" content="web development, portfolio, HTML, CSS, JavaScript">
-	<meta name="author" content="Fatlum Sulaj">
-	<meta property="og:title" content="Fatlum Sulaj Web Developer">
+  <meta name="description"
+    content="My web development portfolio showcases my skills and experience in HTML, CSS, JavaScript, and more.">
+  <meta name="keywords" content="web development, portfolio, HTML, CSS, JavaScript">
+  <meta name="author" content="Fatlum Sulaj">
+  <meta property="og:title" content="Fatlum Sulaj Web Developer">
   <title>Fatlum Sulaj</title>
 </head>
 
@@ -19,7 +20,7 @@
     <nav>
       <p><a href="" class="logo">𝔉𝔖</a></p>
       <div>
-        <a href="#" class="mentorship">Projects</a>
+        <a href="#navProjects" class="mentorship">Projects</a>
         <a href="contact.html" class="sayHello">Say Hello</a>
       </div>
     </nav>
@@ -44,7 +45,7 @@
 
   <section class="aboutMe">
     <div class="aboutMe-categories">
-      <h2 class="fatlumsulaj">Hallo, ich bin Fatlum Sulaj. Es freut mich, dich kennenzulernen.</h2>
+      <h2 id="fatlumsulaj">Hallo, ich bin Fatlum Sulaj. Es freut mich, dich kennenzulernen.</h2>
       <div class="aboutMe-flex">
         <div class="buttons-content">
           <button class="aboutMe-button aboutMe-active-btn" id="aboutMe">ABOUT</button>
@@ -118,6 +119,7 @@
           <p>Netlify</p>
           <p>Terminal</p>
           <p>Vercel</p>
+          <p>Joomla</p>
         </div>
         <div class="service-template">
           <i class="fa-solid fa-magnifying-glass-chart"></i>
@@ -136,7 +138,7 @@
     </div>
   </section>
 
-  <div class="projects-center">
+  <div class="projects-center" id="navProjects">
     <section class="projects">
       <div class="projects-intro">
         <h2>Meine aktuellen Arbeiten</h2>
@@ -153,7 +155,7 @@
               </div>
               <p>Landingpage eines Architekturbüros mit Informationen über das Unternehmen und seine
                 Projekte.</p>
-              <a href=""><button>View Project</button></a>
+              <a href="https://architect-fs.netlify.app/" target="_blank"><button>View Project</button></a>
             </div>
             <div class="project-template">
               <div class="project-flex">
@@ -162,7 +164,7 @@
               </div>
               <p>Landingpage eines Bauunternehmens mit Informationen über das Unternehmen und seine
                 Bauprojekte.</p>
-              <a href=""><button>View Project</button></a>
+              <a href="https://construction-fs.netlify.app/" target="_blank"><button>View Project</button></a>
             </div>
           </div>
           <div class="project-template-flex">
@@ -175,26 +177,36 @@
           </div>
         </div>
         <div class="other-projects">
-          <div class="miniProject-template">
-            <i class="fa-regular fa-folder"></i>
-            <p>To Do List</p>
-          </div>
-          <div class="miniProject-template">
-            <i class="fa-regular fa-folder"></i>
-            <p>Password Strength Checker</p>
-          </div>
-          <div class="miniProject-template">
-            <i class="fa-regular fa-folder"></i>
-            <p>Random Password Generator</p>
-          </div>
-          <div class="miniProject-template">
-            <i class="fa-regular fa-folder"></i>
-            <p>Hangman Game</p>
-          </div>
-          <div class="miniProject-template">
-            <i class="fa-regular fa-folder"></i>
-            <p>In Entwicklung</p>
-          </div>
+          <a href="https://todoapp-fs.netlify.app/" target="_blank">
+            <div class="miniProject-template">
+              <i class="fa-regular fa-folder"></i>
+              <p>To Do List</p>
+            </div>
+          </a>
+          <a href="https://passwordstrengthchecker-fs.netlify.app/" target="_blank">
+            <div class="miniProject-template">
+              <i class="fa-regular fa-folder"></i>
+              <p>Password Strength Checker</p>
+            </div>
+          </a>
+          <a href="https://passwordgenerator-fs.netlify.app/" target="_blank">
+            <div class="miniProject-template">
+              <i class="fa-regular fa-folder"></i>
+              <p>Random Password Generator</p>
+            </div>
+          </a>
+          <a href="https://rockpaperscissors-fs.netlify.app/" target="_blank">
+            <div class="miniProject-template">
+              <i class="fa-regular fa-folder"></i>
+              <p>Rock Paper Scissors</p>
+            </div>
+          </a>
+          <a href="https://tictactoe-fs.netlify.app/" target="_blank">
+            <div class="miniProject-template">
+              <i class="fa-regular fa-folder"></i>
+              <p>Tic Tac Toe</p>
+            </div>
+          </a>
           <div class="miniProject-template">
             <i class="fa-regular fa-folder"></i>
             <p>In Entwicklung</p>
@@ -206,9 +218,10 @@
 
   <section class="blog">
     <h2 class="blog-intro1">Empfohlene Artikel</h2>
-    <p class="blog-intro2">Entdecken Sie meinen Blog für Einblicke, Tipps und die neuesten Nachrichten zu Webentwicklung und SEO-Verbesserungen.</p>
+    <p class="blog-intro2">Entdecken Sie meinen Blog für Einblicke, Tipps und die neuesten Nachrichten zu Webentwicklung
+      und SEO-Verbesserungen.</p>
     <div class="blog-wrapper">
-      
+
       <div class="blog-template">
         <div class="category-number">
           <h4>Web development / Business</h4>
@@ -217,7 +230,7 @@
         <h2 class="blogTitle">Individuelle Websites erstellen: Warum Ihr Unternehmen eine braucht!</h2>
         <div class="blogDate-readTime">
           <p class="blogDate">11 September</p>
-          <p class="readTime">10 minute read</p>
+          <p class="readTime">Bald...</p>
         </div>
       </div>
 
@@ -229,7 +242,7 @@
         <h2 class="blogTitle">Warum Ihre Website SEO-Optimiert sein muss: Eine Geschäftsperspektive</h2>
         <div class="blogDate-readTime">
           <p class="blogDate">11 September</p>
-          <p class="readTime">10 minute read</p>
+          <p class="readTime">Bald...</p>
         </div>
       </div>
 
@@ -241,7 +254,7 @@
         <h2 class="blogTitle">Verbesserung der Seitenladegeschwindigkeit: Wie sie Ihr Geschäft beeinflussen kann!</h2>
         <div class="blogDate-readTime">
           <p class="blogDate">11 September</p>
-          <p class="readTime">10 minute read</p>
+          <p class="readTime">Bald...</p>
         </div>
       </div>
 
@@ -250,10 +263,11 @@
           <h4>Web Development</h4>
           <h3>4</h3>
         </div>
-        <h2 class="blogTitle">Von der Idee bis zur Veräffentlichung: Mein Prozess zur Erstellung individueller Websites.</h2>
+        <h2 class="blogTitle">Von der Idee bis zur Veräffentlichung: Mein Prozess zur Erstellung individueller Websites.
+        </h2>
         <div class="blogDate-readTime">
           <p class="blogDate">11 September</p>
-          <p class="readTime">10 minute read</p>
+          <p class="readTime">Bald...</p>
         </div>
       </div>
 
@@ -265,7 +279,7 @@
         <h2 class="blogTitle">E-Commerce navigieren: Tipps zum Aufbau eines erfolgreichen Online-Shops.</h2>
         <div class="blogDate-readTime">
           <p class="blogDate">11 September</p>
-          <p class="readTime">10 minute read</p>
+          <p class="readTime">Bald...</p>
         </div>
       </div>
 
@@ -277,7 +291,7 @@
         <h2 class="blogTitle">Warum Ihre Website unbedingt einen Blog braucht, und wie man anfangen kann.</h2>
         <div class="blogDate-readTime">
           <p class="blogDate">11 September</p>
-          <p class="readTime">10 minute read</p>
+          <p class="readTime">Bald...</p>
         </div>
       </div>
 
@@ -286,10 +300,11 @@
 
   <section class="startProject">
     <div class="startProject-wrapper">
-    <h2>Projekt starten</h2>
-    <p>Interessiert an einer Zusammenarbeit? Sollen wir einen Termin vereinbaren, um uns näher kennenzulernen? Ich lade Sie gerne auf einen Kaffee ein.</p>
-    <button>Contact me</button>
-  </div>
+      <h2>Projekt starten</h2>
+      <p>Interessiert an einer Zusammenarbeit? Sollen wir einen Termin vereinbaren, um uns näher kennenzulernen? Ich
+        lade Sie gerne auf einen Kaffee ein.</p>
+      <button>Contact me</button>
+    </div>
   </section>
 
   <section class="footer">
@@ -302,11 +317,11 @@
         <i class="fa-brands fa-twitter social"></i>
         <i class="fa-brands fa-discord social"></i>
       </div>
-      <p class="sulajfatlum">Fatlum Sulaj</p>
       <div class="copyright">
-      <i class="fa-regular fa-copyright"></i>
-      <p>2023</p>
-    </div>
+        <p class="sulajfatlum">Fatlum Sulaj</p>
+        <i class="fa-regular fa-copyright"></i>
+        <p>2023</p>
+      </div>
     </div>
   </section>
   <script src="javascript.js"></script>
