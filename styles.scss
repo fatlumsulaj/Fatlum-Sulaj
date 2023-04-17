@@ -82,7 +82,7 @@ nav {
     max-width: 940px;
 
     h1 {
-        font-size: 46px;
+        font-size: 44px;
     }
 
     p {
@@ -138,12 +138,12 @@ nav {
 
     .hero {
         h1 {
-            font-size: 32px;
+            font-size: 27px;
             @include padding-template()
         }
 
         p {
-            font-size: 17px;
+            font-size: 16px;
         }
     }
 
@@ -381,7 +381,7 @@ nav {
     padding: 1px 10px;
 
     h2 {
-        font-size: 33px;
+        font-size: 32px;
         color: black;
         margin-bottom: 15px;
     }
@@ -506,11 +506,13 @@ nav {
         padding: 1px 10px;
 
         h2 {
-            font-size: 28px;
+            font-size: 24px;
             color: black;
             margin-bottom: 15px;
         }
-
+        p {
+            font-size: 17px;
+        }
     }
 
     .miniProject-template {
@@ -636,6 +638,15 @@ nav {
     .blogDate {
         font-size: 13px;
     }
+
+    .blog-intro1 {
+        font-size: 24px;
+    }
+    
+    .blog-intro2 {
+        font-size: 17px;
+        @include padding-template()
+    }
 }
 
 
@@ -702,6 +713,8 @@ nav {
         justify-content: center;
         align-items: center;
         gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -775,7 +788,19 @@ nav {
 
     .footer {
         margin-top: -80px;
-        padding-top: 130px;
+        padding-top: 140px;
         padding-bottom: 20px;
+    }
+    .quote {
+        font-size: 17px;
+        @include padding-template()
+    }
+
+    .socialMedias {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
