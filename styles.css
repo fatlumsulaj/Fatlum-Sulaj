@@ -105,6 +105,9 @@ nav div .sayHello {
 }
 
 @media (max-width: 550px) {
+  nav {
+    height: 100px;
+  }
   .container {
     margin-top: 20px;
   }

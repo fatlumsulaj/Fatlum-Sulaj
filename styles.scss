@@ -124,6 +124,9 @@ nav {
 }
 
 @media (max-width: $smallScreens) {
+    nav {
+        height: 100px;
+    }
     .container {
         margin-top: 20px;
     }
