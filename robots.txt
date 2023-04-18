@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://www.fatlumsulaj.com/sitemap.xml
+robots.txt
